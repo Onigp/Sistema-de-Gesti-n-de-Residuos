@@ -138,7 +138,8 @@ def mostrar_dashboard():
                     x=alt.X('Tipo', sort='-y'),
                     y='Cantidad',
                     color=alt.condition(
-                        alt.datum['Tipo'].isin(reciclables),
+                        # En lugar de usar alt.datum, usamos una expresión de cadena (Vega-Expression)
+                        alt.FieldOneOfPredicate(field='Tipo', oneOf=reciclables),
                         alt.value('#10b981'),
                         alt.value('#ef4444')
                     )
