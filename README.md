@@ -160,7 +160,7 @@ GEMINI_API_KEY=tu_clave_api_aqui
 
 ### 4. Ejecutar la aplicación
 ```bash
-streamlit run run.py
+streamlit run app.py
 ```
 
 ---
@@ -302,3 +302,4 @@ Contiene la información de cada categoría disponible:
   }
 }
 ```
+
